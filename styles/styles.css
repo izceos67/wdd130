@@ -9,13 +9,12 @@ nav a {
     display: block;
 }
 
-h1 {
-    color: steelblue;
+main {
+    max-width: 840px;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
+h1 {
+    color: steelblue;
 }
 
 main img {
