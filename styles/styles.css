@@ -13,6 +13,11 @@ h1 {
     color: steelblue;
 }
 
+main {
+    width: 800px;
+    margin: 0 auto;
+}
+
 main img {
     width: 150px;
     height: auto;
