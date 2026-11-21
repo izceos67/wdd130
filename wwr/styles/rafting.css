@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #18261a;
+    /* Deep shadowy evergreen */
+    --secondary-color: #263b29;
+    /* Slightly lighter dark forest green */
+    --accent1-color: #18261a;
+    /* Deep evergreen banners */
+    --accent2-color: #ffffff;
+    /* Crisp white text */
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: #222222;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 12px;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 36px;
+    height: auto;
+    margin-right: 8px;
+}
+
+/* Hero Section & Overlays */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+    background-color: rgba(24, 38, 26, 0.88);
+    /* Semi-transparent deep evergreen */
+    color: #ffffff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: rgba(24, 38, 26, 0.88);
+    /* Semi-transparent deep evergreen */
+    color: #ffffff;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+    border: 2px solid #ffffff;
+}

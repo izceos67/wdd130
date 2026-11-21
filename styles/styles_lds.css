@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the overall page working with the html file adding a <div class="grid"> containning th emain and the aside */
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Fixing the navigation bar */
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    /* changed from 1px to 1rem to fix the navigation bar what is the difference between rem an px? */
+    text-decoration: none;
+    /* added to fix the navigation bar*/
+    font-size: 1.2rem;
+    /* added to Fixing the navigation bar */
+    font-weight: 700;
+    /* added to Fixing the navigation bar */
+    color: #fff;
+    /* added to Fixing the navigation bar */
+}
+
+/* Fixing the navigation bar */
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    /* added to fix the navigation bar*/
+    font-size: 1.2rem;
+    /* added to Fixing the navigation bar */
+    font-weight: 700;
+    /* added to Fixing the navigation bar */
+    color: fff;
+    /* changed from to #fff yo fix the navigation bar*/
+}
+
+main {
+    max-width: 840px;
+}
+
+h1 {
+    color: steelblue;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    float: right;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    margin: 0 0 1rem 1rem;
+}
+
+p {
+    padding: 0;
+}
+
+aside {
+    width: 20em;
+    position: relative;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid #b71234;
+    padding: 1rem;
+    background-color: #cccaca;
+    color: #1a044e;
+}
+
+ul.box {
+    clear: both;
+}

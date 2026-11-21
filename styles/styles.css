@@ -1,42 +1,94 @@
-nav {
-    background-color: steelblue;
-    padding: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Center the overall page working with the html file adding a <div class="grid"> containning th emain and the aside */
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Fixing the navigation bar */
+nav {
+    background-color: steelblue;
+    /* changed from 1px to 1rem to fix the navigation bar what is the difference between rem an px? */
+    padding: 1rem;
+    /* added to fix the navigation bar and put all links in only one row*/
+    display: flex;
+    /* added to Fixing the navigation bar */
+    justify-content: space-evenly;
+    /* added to Fixing the navigation bar */
+    align-items: center;
+}
+
+/* Fixing the navigation bar */
 nav a {
-    color: white;
-    padding: 10px;
     display: block;
+    /* changed fix the navigation bar*/
+    padding: 0.5rem;
+    /* added to fix the navigation bar*/
+    text-decoration: none;
+    /* added to Fixing the navigation bar */
+    font-size: 1.2rem;
+    /* added to Fixing the navigation bar */
+    font-weight: 700;
+    /* changed from to #fff yo fix the navigation bar*/
+    color: #fff;
+}
+
+/* Added  .grid to  Place <aside > and <main > Side-by-Side */
+.grid {
+    display: grid;
+    /* added to force two column side by side*/
+    grid-template-column: 20rem 1 fr;
+    align-items: center;
 }
 
 main {
-    max-width: 840px;
+    /*added grid-column and margin to display in two columns*/
+    grid-colum: 2/3;
+    /* added to force two column side by side*/
+    grid-row: 1/2;
+    margin: 1rem;
+    /*max-width: 840px;  se elimina */
 }
 
 h1 {
     color: steelblue;
+    /*added to polish the typography and spacing (h1,p,ul.box,aside,h2*/
+    border-bottom: 1px solid sttelblue;
+    /*added to polish the typography and spacing (h1,p,ul.box,aside,h2*/
+    margin-bottom: 1rem;
 }
 
 main img {
     width: 150px;
     height: auto;
+    float: right;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
-    padding: 0;
+    margin: 1rem
+        /* eliminated: padding: 0; */
 }
 
 aside {
-    width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    /* why use rgba instead of hex here? */
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
+    /* changed from 200 px to 20 rem*/
+    width: 20rem;
+    position: relative;
+    /* added to set in 1st column*/
+    grid-colum: 1/2;
+    /* added to set in 1st column*/
+    grid-row: 1/2;
     text-align: center;
 }
 
@@ -45,8 +97,33 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    /*changed from 42 to 25 px to make Mexico City pop over the image*/
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*added to make Mexico City pop over the image*/
+    text-shadow: 0 0 8px white;
+}
+
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid #b71234;
+    padding: 1rem;
+    background-color: #cccaca;
+    color: #1a044e;
+}
+
+ul.box {
+    clear: both;
+    /* added to fix the bullet point inside the temple*/
+    padding-left: 2rem;
 }
