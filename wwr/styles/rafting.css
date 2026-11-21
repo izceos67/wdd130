@@ -19,7 +19,7 @@
 
 body {
     font-family: var(--body-font);
-    color: #222222;
+    color: var(--secondary-color);
 }
 
 header,
@@ -29,10 +29,17 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
+h1 {
     font-family: var(--heading-font);
     background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 12px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
     color: var(--accent2-color);
     text-align: center;
     padding: 12px;
@@ -75,7 +82,7 @@ article {
     text-align: center;
     background-color: rgba(24, 38, 26, 0.88);
     /* Semi-transparent deep evergreen */
-    color: #ffffff;
+    color: var(--accent2-color);
 }
 
 .hero article {
@@ -86,12 +93,12 @@ article {
     padding: 12px;
     background-color: rgba(24, 38, 26, 0.88);
     /* Semi-transparent deep evergreen */
-    color: #ffffff;
+    color: var(--accent2-color);
 }
 
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 16px;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--accent2-color);
 }
